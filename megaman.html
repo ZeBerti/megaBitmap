@@ -1,0 +1,54 @@
+<html>
+<head>
+	<script src="megamanBuilder.js"></script>
+	<link rel="stylesheet" type="text/css" href="megamanStyle.css" media="screen" 
+</head>
+<body type="module" src="data.json" onload="render('tab1')">
+
+
+	<h1>Megaman Render Simulation</h1>
+
+	<div class="container">
+		<small>[0-9]+w	[0-9]+b	[0-9]+s	[0-9]+h</small>
+		<label>Render speed</label> <input id="render-delay" type="number" placeholder="render delay" value=12></input>
+		<button onclick="paint();" > Render </button>
+		<button onclick="deleteCellColors();"> Delete </button>
+		<label>Pixels wide</label>
+		<input id="pixels-wide" type="number" onchange="calcResolution()" placeholder="pixels" value=21>
+	</div>
+
+	<div class="container">
+		<textarea id="textarea-code" >	
+10w 3s 8w
+8w 3s 2h 1s 7w
+7w 1s 3b 1s 2h 1s 6w
+6w 1s 5b 4s 5w
+6w 1s 5b 1s 2h 1b 1s 4w
+5w 1s 1h 6b 2s 1b 1s 4w
+5w 1s 1h 2b 4x 2b 1x 1s 4w
+5w 1s 1h 1b 3x 2s 1x 1s 1x 1s 4w
+6w 1s 1b 3x 2s 1x 1s 1x 1s 4w
+5w 2s 1b 8x 1s 4w
+3w 2s 2h 1s 1b 1x 4s 1x 3s 3w
+2w1s 1b 4h 1s 5x 1s 2h 1b 1s 2w
+2w 1s 2b 4h 5s 2h 2b 1s 2w
+1w 1s 3b 1h 1s 7h 1s 1h 3b 1s 1w
+1w 1s 2b 3s 7h 3s 2b 1s 1w
+1w 1s 3b 2s 7h 2s 3b 1s 1w
+1w 1s 3b 2s 7b 2s 3b 1s 1w
+2w 5s 7b 5s 2w
+5w 1s 2h 4b 3h 1s 5w
+4w 1s 2b 3h 1s 4h 1b 1s 4w
+3w 2s 3b 1h 1s 1w 1s 1h 3b 2s 3w
+1w 2s 5b 1s 3w 1s 5b 2s 1w
+1s 7b 1s 3w 1s 7b 1s
+1s 7b 1s 3w 1s 7b 1s
+9s 3w 9s
+		</textarea>
+	</div>
+
+	<div id="table-container" class="container"></div>
+	
+</body>
+
+</html>

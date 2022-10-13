@@ -1,0 +1,48 @@
+.blue {
+	background-color: blue;
+}
+
+.black {
+	background-color: black;
+}
+
+.white {
+	background-color: lightgrey;
+}
+
+.lightblue {
+	background-color: lightblue;
+}
+
+.red {
+	background-color: red;
+}
+
+.skintone {
+	background-color: #eaddb3;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+    height: 10px;
+    width: 9px;
+    
+}
+
+table.crt td {
+   height: 10px;
+   width: 4px;
+   border: 3px solid #00000063;
+}
+
+.container {
+	margin: 15px;
+}
+
+textarea {
+  width: 345px;
+  height: 200px;
+}
