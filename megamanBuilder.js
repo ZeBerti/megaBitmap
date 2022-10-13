@@ -40,9 +40,6 @@ function render(command){
     calcResolution();
 	tableCreate(cols, rows);
 
-	// Play JSON TODO DELETEME
-import data from './data.json' assert { type: 'JSON' };
-console.log(data);
 }
 
 // Does not work for local files
